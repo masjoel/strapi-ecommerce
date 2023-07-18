@@ -57,3 +57,6 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
 
 midtrans-nodejs-client
+
+https://docs.midtrans.com/docs/coreapi-cardless-credit-payment-integration
+https://simulator.sandbox.midtrans.com/bca/va/payment
