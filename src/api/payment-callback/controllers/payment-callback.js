@@ -14,9 +14,9 @@ module.exports = createCoreController('api::payment-callback.payment-callback', 
         
         let params = {}
         if (request.transaction_status=='settlement'){
-            params = {'data':{"orderStatus": 'purchased'}}
+            params = {'data':{"statusOrder": 'purchased'}}
         }else{
-            params = {'data':{"orderStatus": 'cancel'}}
+            params = {'data':{"statusOrder": 'cancel'}}
         }
         let updateOrder = await strapi.service('api::order.order').update(request.order_id, params)
         console.log('update : ', updateOrder)
