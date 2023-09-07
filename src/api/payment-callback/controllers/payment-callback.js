@@ -13,7 +13,6 @@ module.exports = createCoreController('api::payment-callback.payment-callback', 
 
         let order = await strapi.service('api::order.order').findOne(request.order_id);
         let inputData = { 'data': { 'history': request } };
-
         const result = await strapi.service('api::payment-callback.payment-callback').create(inputData);
 
         let params = {}
